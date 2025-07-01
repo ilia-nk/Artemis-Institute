@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Vazirmatn', sans-serif;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+    background-color: #DDDDDD;
+}

@@ -38,16 +38,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 12%;
-    
+    /* row-gap: 12%; */
 }
 .mainWindow > form > input {
     width: 80%;
     padding: 0.75rem;
-    margin-bottom: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 1rem;
+}
+.mainWindow > form > .input1 {
+    margin-bottom: 3rem;
+}
+.mainWindow > form > .input2 {
+    margin-bottom: 2rem;
 }
 .mainWindow > form > button {
     width: 60%;
@@ -62,4 +66,12 @@ body {
 }
 .mainWindow > form > button:hover {
     background-color: #084298;
+}
+.error {
+  border: 2px solid red !important;
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }

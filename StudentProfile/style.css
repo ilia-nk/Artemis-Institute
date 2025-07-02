@@ -1,5 +1,6 @@
 
 * {
+    direction: rtl;
       box-sizing: border-box;
       padding: 0;
       margin: 0;
@@ -88,6 +89,74 @@
 
     footer p {
       margin: 0.3rem 0;
+    }
+
+    /* Modal Styles */
+    
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .modal {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal h3 {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .modal ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .modal ul li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.75rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .modal ul li a {
+      color: #0d6efd;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .modal ul li a:hover {
+        color: #dc3545;
+    }
+
+    .close-btn {
+      display: block;
+      margin: 1rem auto 0;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .close-btn:hover {
+        background-color: #96242f;
     }
 
     @media (min-width: 600px) {

@@ -28,16 +28,48 @@ body {
     transition: background-color 1s ease, margin-top 1s ease, width 1s ease, max-width 1s ease, border-radius 1s ease;
 } */
  
-header {
+/* header {
     width: 100%;
     height: 100px;
-    background-color: #2563EB;
-    position: fixed;
+    background-color: #3B82F6;
     transition: background-color 0.3s ease, margin-top 0.3s ease, width 0.3s ease, border-radius 0.3s ease;
     display: flex;
     box-sizing: border-box;
     z-index: 100;
-}
+    margin-bottom: 100px;
+} */
+
+
+
+
+
+
+header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+     font-size: clamp(10px, 10vw, 30px); 
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-size: clamp(7px, 10vw, 20px); 
+      text-decoration: underline;
+    }
+
+
+
+
+
+
 .header-div-l {
     width: 50%;
     height: 100px;
@@ -121,10 +153,8 @@ header {
 
 .section-1
 {
-    height: 600px;
+    height: 700px;
     margin: auto;
-    position: relative;
-    top: 175px;
     background-color: #F9FAFB    ;
     padding: 30px;
     display: flex;
@@ -133,6 +163,7 @@ header {
     justify-content: center;
     border-top: 5px solid #2eaa70;
     border-bottom: 5px solid #2eaa70;
+    margin-bottom: 100px;
 }
 .section-1-div
 {
@@ -175,11 +206,11 @@ header {
     width: 50%;
 }
 .s1d-left h1 {
-    font-size: clamp(24px, 4vw, ۳0px);
+    font-size: clamp(24px, 4vw, 30px);
     color: #111827;
 }
 .s1d-left {
-    padding-right: 20px;
+    text-align: center;
 }
 
 @keyframes fadeIn {
@@ -224,12 +255,82 @@ header {
 }
 .banner-div
 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     margin: auto;
 }
 .banner-div img
 {
     width: 100%;
     height: 100%;
+}
+
+
+
+
+.section-2
+{
+    height: 100px;
+    margin: auto;
+    background-color: #F9FAFB;
+    padding: 30px;
+    display: flex;
+    border-top: 5px solid #2eaa70;
+    border-bottom: 5px solid #2eaa70;
+    margin-bottom: 100px;
+}
+.s2-card
+{
+    height: 100%;
+    width: 250px;
+    border-radius: 50px;
+    justify-content: space-between;
+    gap: 40px;
+    margin: auto;
+    background-color: #DDDDDD;
+    border: 2px solid #2eaa70;
+    font-size: 27px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    color: #111827;
+}
+
+footer {
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    footer p {
+      margin: 0.3rem 0;
+    }
+
+@media(max-width:1100px)
+{
+    #banner-id
+    {
+        display: none;
+    }
+    .s1d-left
+    {
+        width: 100%;
+    }
+    .section-2
+    {
+        display: block;
+        height: 440px;
+    }
+    .s2-card
+    {
+        margin-bottom: 10px;
+        height: 100px;
+    }
 }

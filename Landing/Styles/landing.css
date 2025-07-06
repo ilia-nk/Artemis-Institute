@@ -65,12 +65,45 @@ header {
       text-decoration: underline;
     }
 
+    @media(max-width:540px)
+    {
+        nav a 
+        {
+            font-size: 0.8rem;
+        }
+        header h1 
+        {
+            font-size: 1.25rem;
+        }
+        .s1-up
+        {
+            font-size: 2rem !important; 
+        }
+        .section-1
+        {
+            height: 350px !important;
+            margin-bottom: 50px !important;
+        }
+        .s1d-left h1
+        {
+            font-size: 1rem !important;
+        }
+        .s2-card
+        {
+            width: 143.75px !important;
+            height: 57.5px !important;
+            font-size: 15px !important;
+        }
+        .section-2
+        {
+            margin-bottom: 50px !important;
+        }
+    }
 
 
 
 
-
-.header-div-l {
+/* .header-div-l {
     width: 50%;
     height: 100px;
     display: flex;
@@ -123,9 +156,9 @@ header {
     border: 5px solid #F9FAFB;
     color: #F9FAFB;
     transition: 200ms;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     header {
         height: auto;
         flex-direction: column;
@@ -149,7 +182,7 @@ header {
     .header-button-div button {
         font-size: 20px;
     }
-}
+} */
 
 .section-1
 {
@@ -161,8 +194,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-top: 5px solid #2eaa70;
-    border-bottom: 5px solid #2eaa70;
     margin-bottom: 100px;
 }
 .section-1-div
@@ -178,7 +209,7 @@ header {
     height: 100%; 
     text-align: center;
     font-size: clamp(50px, 10vw, 100px); 
-    color: #3B82F6;
+    color: #0d6efd;
     font-family: vazirB;
     transform: translateY(20px);
     animation: fadeIn 0.8s ease-in-out forwards;
@@ -275,8 +306,6 @@ header {
     background-color: #F9FAFB;
     padding: 30px;
     display: flex;
-    border-top: 5px solid #2eaa70;
-    border-bottom: 5px solid #2eaa70;
     margin-bottom: 100px;
 }
 .s2-card
@@ -291,10 +320,30 @@ header {
     border: 2px solid #2eaa70;
     font-size: 27px;
     text-align: center;
-    line-height: 100px;
     cursor: pointer;
     color: #111827;
+    font-family: Vazir;
+    justify-content: space-between;
+      align-items: center;
 }
+.s2-card:hover
+{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+
+
+.s2-holder
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+
 
 footer {
       background-color: #0d6efd;
@@ -326,11 +375,21 @@ footer {
     .section-2
     {
         display: block;
-        height: 440px;
+        height: 200px;
     }
     .s2-card
     {
-        margin-bottom: 10px;
         height: 100px;
     }
+    .s2-card
+        {
+            width: 187.5px;
+            height: 75px;
+            font-size: 20px;
+        }
+        .s2-holder
+        {
+            height: 50%;
+            width: 100%;
+        }
 }

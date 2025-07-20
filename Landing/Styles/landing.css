@@ -54,24 +54,33 @@ header {
     }
 
     header h1 {
-     font-size: clamp(10px, 10vw, 30px); 
+        font-size: clamp(10px, 10vw, 30px);
+        margin-block-start: 0;
+        margin-block-end: 0;
     }
 
-    nav a {
+    /* nav a {
       color: white;
       margin-left: 1rem;
       text-decoration: none;
       font-size: clamp(7px, 10vw, 20px); 
       text-decoration: underline ;
       text-underline-offset: 7px;
+    } */
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: underline;
+      text-underline-offset: 8px;
+      font-size: 0.95rem;
     }
-    
 
     @media(max-width:540px)
     {
         nav a 
         {
-            font-size: 0.8rem;
+            font-size: 0.95rem;
         }
         header h1 
         {

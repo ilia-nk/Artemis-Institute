@@ -31,7 +31,8 @@
     nav a {
       color: white;
       margin-left: 1rem;
-      text-decoration: none;
+      text-decoration: underline;
+      text-underline-offset: 8px;
       font-size: 0.95rem;
     }
 

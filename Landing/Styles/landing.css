@@ -62,8 +62,10 @@ header {
       margin-left: 1rem;
       text-decoration: none;
       font-size: clamp(7px, 10vw, 20px); 
-      text-decoration: underline;
+      text-decoration: underline ;
+      text-underline-offset: 7px;
     }
+    
 
     @media(max-width:540px)
     {
